@@ -1,4 +1,4 @@
-//Giovanna Blasco
+//Giovanna de Morais
 #include<stdio.h>
 #define MAX 3
 
