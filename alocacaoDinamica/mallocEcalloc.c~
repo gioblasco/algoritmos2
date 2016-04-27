@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+
+void main(){
+	int *pM, *pC;
+	pM = (int *) malloc(4);
+	printf("%d\n", *pM);
+	*pM = 5;
+	printf("%d\n", *pM);
+	
+
+	pC = (int *) malloc(4);
+	printf("%d\n", *pC);
+	*pC = 5;
+	printf("%d\n", *pC);
+
+}
+
+
