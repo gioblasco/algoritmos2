@@ -15,13 +15,13 @@ void main(){
 	// Abre o arquivo em modo escrita
 	fileWrite = fopen("exemplo2saida.txt", "w");
 
+	// Testa a abertura
 	if (fileRead == NULL){
 		perror("Erro ao abrir o arquivo.\n");
 		exit(-1);
 	}
 
-	// Testa a abertura
-	if (fileRead == NULL){
+	if (fileWrite == NULL){
 		perror("Erro ao abrir o arquivo.\n");
 		exit(-1);
 	}
@@ -31,7 +31,7 @@ void main(){
 		(o último o caractere é o \0) */
 		fgets(line, MAX, fileRead);
 		printf("%s\n", line); // Imprime a linha lida
-		printf("%d\n", strlen(line));// Imprime a quantidade de caracteres da linha
+		printf("%ld\n", strlen(line));// Imprime a quantidade de caracteres da linha
 	}
 
 	// Reposiciona indicador no inicio do arquivo
