@@ -3,14 +3,6 @@
 #include<string.h>
 #define MAX 300
 
-// Testa a abertura
-void testFileOpen(FILE *file){
-	if (file == NULL){
-		perror("Erro ao abrir o arquivo.\n");
-		exit(-1);
-	}
-}
-
 void main(){
 
 	// Declaração
