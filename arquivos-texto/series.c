@@ -15,7 +15,7 @@ BDSeries leBDSeries(char *nome_arquivo) {
 	
 
 	fgets(linha, REGISTER_SIZE-1, arquivo);	// le cadeia de caracteres do arquivo ate \n
-	sscanf(linha, "%d", &bd.num_series);	// coloca valor de linha no campo num_amigos
+	sscanf(linha, "%d", &bd.num_series);	// coloca valor de linha no campo num_series
 
 	bd.series = (Serie *) calloc(bd.num_series, sizeof(Serie)); // Aloca estruturas
 	
